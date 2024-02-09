@@ -15,7 +15,7 @@
     "build-keycloak-theme": "yarn build && keycloakify"
   },
   "keycloakify": {
-    "themeName": "aqviser-login",
+    "themeName": "perivallon-login",
     "extraThemeProperties": [
       "foo=bar"
     ]
