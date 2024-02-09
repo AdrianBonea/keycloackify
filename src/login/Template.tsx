@@ -1,6 +1,7 @@
 // Copy pasted from: https://github.com/InseeFrLab/keycloakify/blob/main/src/login/Template.tsx
 
 import { useState } from "react";
+
 import { clsx } from "keycloakify/tools/clsx";
 import { usePrepareTemplate } from "keycloakify/lib/usePrepareTemplate";
 import { type TemplateProps } from "keycloakify/login/TemplateProps";
@@ -9,7 +10,7 @@ import type { KcContext } from "./kcContext";
 import type { I18n } from "./i18n";
 import logoUrl from "./assets/keycloakify-logo.png";
 
-export default function Template(props: Readonly<TemplateProps<KcContext, I18n>>) {
+export default function Template(props: TemplateProps<KcContext, I18n>) {
     const {
         displayInfo = false,
         displayMessage = true,
@@ -31,7 +32,7 @@ export default function Template(props: Readonly<TemplateProps<KcContext, I18n>>
 
     const { msg } = i18n;
 
-    const { realm, auth, url, message, isAppInitiatedAction } = kcContext;
+    const { realm, locale, auth, url, message, isAppInitiatedAction } = kcContext;
 
     const { isReady } = usePrepareTemplate({
         "doFetchDefaultThemeResources": doUseDefaultCss,
