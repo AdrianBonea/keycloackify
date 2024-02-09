@@ -32,7 +32,7 @@ export default function Template(props: Readonly<TemplateProps<KcContext, I18n>>
 
     const { msg } = i18n;
 
-    const { realm, locale, auth, url, message, isAppInitiatedAction } = kcContext;
+    const { realm,  auth, url, message, isAppInitiatedAction } = kcContext;
 
     const { isReady } = usePrepareTemplate({
         "doFetchDefaultThemeResources": doUseDefaultCss,

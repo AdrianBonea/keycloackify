@@ -12,13 +12,13 @@ export const { useI18n } = createUseI18n({
     // that is "Forgot Password?" see: https://github.com/InseeFrLab/keycloakify/blob/f0ae5ea908e0aa42391af323b6d5e2fd371af851/src/lib/i18n/generated_messages/18.0.1/login/en.ts#L17
     doForgotPassword: 'I forgot my password',
     invalidUserMessage: 'Invalid username or password. (this message was overwrite in the theme)',
-    doLogInTitle: 'Welcome back, Compania de Apă SA',
-    doLoginSubtitle: 'Connect to Aqviser',
+    doLogInTitle: 'Welcome back',
+    doLoginSubtitle: 'Connect to Perivallon',
     userNamePlaceholder: 'Username',
     passwordPlaceholder: 'Password',
     keepMeLoggedIn: 'Keep me logged in',
     doLogIn: 'Log in',
-    copyrigth: '© 2023 AQviser. All rights reserved.',
+    copyrigth: '© 2023 Perivallon. All rights reserved.',
     politics: 'Privacy Policy',
   },
   ro: {
@@ -29,12 +29,12 @@ export const { useI18n } = createUseI18n({
     invalidUserMessage: 'Nume de utilizator sau parolă invalidă. (acest mesaj a fost suprascris în temă)',
     /* spell-checker: enable */
     doLogInTitle: 'Bine ai revenit,<br> Compania de Apă SA',
-    doLoginSubtitle: 'Conectează-te la Aqviser',
+    doLoginSubtitle: 'Conectează-te la Perivallon',
     userNamePlaceholder: 'Nume utilizator',
     passwordPlaceholder: 'Parolă',
     keepMeLoggedIn: 'Păstrează-mă logat',
     doLogIn: 'Log in',
-    copyrigth: '© 2023 AQviser. Toate drepturile rezervate.',
+    copyrigth: '© 2023 Perivallon. Toate drepturile rezervate.',
     politics: 'Politica de confidențialitate',
   },
 });

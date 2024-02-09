@@ -110,7 +110,10 @@ body {
   width: 16px;
   height: 16px;
   margin: 0 !important;
-  color: #1677ff;
+}
+
+.inputCheckbox:checked {
+  color: red;
 }
 
 .checkboxWrapper {
@@ -133,14 +136,14 @@ body {
 }
 
 .doForgotPassword {
-  color: #1677ff;
+  color: #02aab0;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
 }
 
 .doForgotPassword:hover {
-  color: rgba(22, 119, 255, 0.8) !important;
+  color: #00cbac !important;
 
   text-decoration: none;
 }
@@ -152,18 +155,18 @@ body {
   font-size: 14px; /* equivalent to text-sm in Tailwind */
   font-weight: 400;
   justify-content: center;
-  background: #1677ff; /* Replace with actual color */
+  background: #02aab0;
   color: white;
 
   padding: 0 16px 0 16px;
   border-radius: 6px;
-  border: 1px #1677ff solid;
+  border: 1px #02aab0 solid;
   gap: 8px;
 }
 
 .submitButton:hover {
-  background: rgba(22, 119, 255, 0.8); /* #1677ff with 80% opacity */
-  border: 1px #1677ff solid;
+  background: #00cbac; /* #1677ff with 80% opacity */
+  border: 0;
 }
 
 .footer {
@@ -185,6 +188,6 @@ body {
 
   a:hover {
     text-decoration: none;
-    color: rgba(22, 119, 255, 0.8);
+    color: #02aab0;
   }
 }
