@@ -12,8 +12,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
     - uses: bahmutov/npm-install@v1
     - run: yarn build
     - run: npx keycloakify
@@ -42,8 +42,8 @@ jobs:
     # We create a release only if the version have been upgraded and we are on a default branch
     if: needs.check_if_version_upgraded.outputs.is_upgraded_version == 'true' && github.event_name == 'push'
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
     - uses: bahmutov/npm-install@v1
     - run: yarn build
     - run: npx keycloakify

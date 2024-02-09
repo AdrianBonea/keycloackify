@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
           return <KcLoginThemeApp kcContext={kcLoginThemeContext} />;
         }
 
-        throw new Error('This app is a Keycloak theme' + "It isn't meant to be deployed outside of Keycloak");
+        throw new Error("This app is a Keycloak theme. It isn't meant to be deployed outside of Keycloak");
       })()}
     </Suspense>
   </StrictMode>
