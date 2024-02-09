@@ -120,10 +120,10 @@ cat << EOF > src/index.tsx
 import { createRoot } from "react-dom/client";
 import { StrictMode, lazy, Suspense } from "react";
 import { kcContext as kcLoginThemeContext } from "./login/kcContext";
-import { kcContext as kcAccountThemeContext } from "./account/kcContext";
+
 
 const KcLoginThemeApp = lazy(() => import("./login/KcApp"));
-const KcAccountThemeApp = lazy(() => import("./account/KcApp"));
+
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
@@ -134,9 +134,7 @@ createRoot(document.getElementById("root")!).render(
                     return <KcLoginThemeApp kcContext={kcLoginThemeContext} />;
                 }
 
-                if( kcAccountThemeContext !== undefined ){
-                    return <KcAccountThemeApp kcContext={kcAccountThemeContext} />;
-                }
+        
 
                 throw new Error(
                   "This app is a Keycloak theme" +

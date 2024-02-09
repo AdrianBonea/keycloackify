@@ -10,7 +10,7 @@ import type { KcContext } from "./kcContext";
 import type { I18n } from "./i18n";
 import logoUrl from "./assets/keycloakify-logo.png";
 
-export default function Template(props: TemplateProps<KcContext, I18n>) {
+export default function Template(props: Readonly<TemplateProps<KcContext, I18n>>) {
     const {
         displayInfo = false,
         displayMessage = true,
