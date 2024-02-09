@@ -15,10 +15,7 @@
     "build-keycloak-theme": "yarn build && keycloakify"
   },
   "keycloakify": {
-    "themeName": "perivallon-login",
-    "extraThemeProperties": [
-      "foo=bar"
-    ]
+    "themeName": "perivallon-login"
   },
   "author": "u/garronej",
   "license": "MIT",

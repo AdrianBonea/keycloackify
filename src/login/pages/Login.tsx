@@ -43,7 +43,7 @@ export default function Login(props: Readonly<PageProps<Extract<KcContext, { pag
 
 
     return (
-        <>
+        <div className='loginWrapper'>
         <Template
             {...{ kcContext, i18n, doUseDefaultCss, classes }}
             displayInfo={
@@ -205,6 +205,6 @@ export default function Login(props: Readonly<PageProps<Extract<KcContext, { pag
                 <a href={`${url.loginAction}/terms.html`} className="politics">{msg('politics')}</a>
             
         </footer>
-        </>
+        </div>
     );
 }
