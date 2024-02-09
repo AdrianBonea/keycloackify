@@ -188,3 +188,11 @@ body {
     color: rgba(22, 119, 255, 0.8);
   }
 }
+
+.loginWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+}
